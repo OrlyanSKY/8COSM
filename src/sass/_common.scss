@@ -1,1 +1,81 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import './variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $black-text;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: 744px) {
+    max-width: 744px;
+  }
+
+  @media (min-width: 1000px) {
+    max-width: 1000px;
+    padding: 0 30px;
+  }
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+    padding: 0 220px;
+  }
+}
