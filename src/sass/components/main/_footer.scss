@@ -72,6 +72,9 @@
     &:hover {
       color: $light-pink;
     }
+    svg {
+      display: block;
+    }
   }
 }
 .logo {
@@ -86,6 +89,7 @@
     margin-bottom: 75px;
   }
   &__icon {
+    display: block;
     fill: currentColor;
     stroke: currentColor;
   }
