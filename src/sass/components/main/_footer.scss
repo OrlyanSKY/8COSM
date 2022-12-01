@@ -5,7 +5,64 @@
   padding-top: 80px;
   padding-bottom: 18px;
 }
+.location_title {
+  font-size: 14px;
+  line-height: 160%;
+  margin-bottom: 20px;
+}
+.phone_link {
+  display: inline-block;
+  color: $white-text;
+  margin-bottom: 60px;
+  font-family: 'Cormorant Infant';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  transition: 0.3s;
+  &:hover {
+    color: $light-pink;
+  }
+}
 .social {
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    transition: 0.3s;
+    color: $white-text;
+    &:hover {
+      color: $light-pink;
+    }
+  }
+}
+.logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: $white-text;
+  transition: 0.3s;
+  &:hover {
+    color: $light-pink;
+  }
+
+  &__icon {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
+.footer_link {
+  display: block;
+  color: $white-text;
+  font-size: 14px;
+  line-height: 160%;
+  transition: 0.3s;
+  &:hover {
+    color: $light-pink;
+  }
 }
