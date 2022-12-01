@@ -1,0 +1,120 @@
+@import '../../variables';
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    max-width: 360px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media (min-width: 744px) {
+      max-width: 744px;
+    }
+
+    @media (min-width: 1000px) {
+      max-width: 1000px;
+      padding: 0 30px;
+    }
+    @media (min-width: 1600px) {
+      max-width: 1600px;
+      padding: 0 50px;
+    }
+  }
+  &__logo {
+    padding: 24px 0;
+
+    fill: $pink;
+    stroke: $black-text;
+    transition: 0.3s;
+    &_icon {
+      display: block;
+      fill: inherit;
+      stroke: inherit;
+    }
+    &:hover {
+      fill: $dark-pink;
+      stroke: $dark-pink;
+    }
+  }
+  .btn {
+    display: none;
+    margin-left: auto;
+    @media (min-width: 744px) {
+      display: inline;
+    }
+    @media (min-width: 1600px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 150px;
+  display: none;
+  @media (min-width: 1600px) {
+    display: flex;
+  }
+  // .nav__list
+
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+
+  // .nav__item
+
+  &__item {
+  }
+
+  // .nav__link
+
+  &__link {
+    padding: 29px 0;
+    color: $black-text;
+    transition: 0.3s;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+
+.ins_link {
+  margin-left: auto;
+  color: $pink;
+  transition: 0.3s;
+  svg {
+    display: block;
+    color: inherit;
+  }
+  &:hover {
+    color: $dark-pink;
+  }
+  @media (min-width: 744px) {
+    margin-left: 20px;
+  }
+}
+
+.burger_open {
+  margin-left: 20px;
+  stroke: $pink;
+  transition: 0.3s;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  svg {
+    display: block;
+    stroke: inherit;
+  }
+  &:hover {
+    stroke: $dark-pink;
+  }
+  @media (min-width: 1600px) {
+    display: none;
+  }
+}
