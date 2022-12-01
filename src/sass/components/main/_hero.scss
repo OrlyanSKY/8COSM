@@ -23,6 +23,12 @@
     }
     @media (min-width: 1600px) {
     }
+    .btn {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 23px;
+      width: 250px;
+    }
   }
 
   // .hero__img
@@ -51,25 +57,42 @@
   // .hero__title
 
   &__title {
+    margin-bottom: 40px;
     font-style: italic;
     font-weight: 300;
     font-size: 35px;
     line-height: 100%;
-    text-align-last: left;
+    text-align: left;
     .accent {
-      padding: 0;
-      text-align-last: right;
+      display: block;
+      margin-top: 10px;
+      text-align: right;
       font-family: 'Cormorant Garamond';
       font-style: italic;
       font-weight: 700;
       font-size: 48px;
       line-height: 100%;
+      @media (min-width: 744px) {
+      }
+
+      @media (min-width: 1000px) {
+      }
+      @media (min-width: 1600px) {
+      }
     }
   }
 
   // .hero__text
 
   &__text {
+    margin-left: 38px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 160%;
+    .accent {
+      font-style: italic;
+      font-weight: 600;
+    }
   }
 }
 
@@ -81,4 +104,51 @@
   }
 }
 .city_btn {
+}
+
+.arrow_link {
+  position: relative;
+  display: inline-block;
+  padding-right: 13px;
+  color: $black-text;
+  transition: 0.3s;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:hover::before {
+    right: -43px;
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+    right: -55px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 1px;
+    transition: 0.3s;
+    display: block;
+    width: 40px;
+    height: 20px;
+    padding: 6px 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='8' viewBox='0 0 40 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M39.35 4.35a.5.5 0 000-.7L36.17.46a.5.5 0 10-.7.71L38.28 4l-2.83 2.83a.5.5 0 10.71.7l3.18-3.18zM0 4.5h39v-1H0v1z' fill='%23EA4781'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -3px;
+    right: -52px;
+    height: 28px;
+    width: 28px;
+    transition: 0.3s;
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14' cy='14' r='13.5' stroke='%23EA4781'/%3E%3C/svg%3E");
+  }
 }
