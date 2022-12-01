@@ -85,6 +85,7 @@ img {
 button {
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
 .btn {
@@ -96,6 +97,7 @@ button {
   background-color: $pink;
   color: $white-text;
   transition: 0.3s;
+  line-height: 130%;
 
   &:hover {
     background-color: $dark-pink;
