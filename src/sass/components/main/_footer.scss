@@ -1,33 +1,65 @@
+.main_wrapper {
+  @media screen and (min-width: 744px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.right_wrapper {
+  @media screen and (min-width: 744px) {
+    text-align: end;
+  }
+}
 .footer {
   background-color: $black-text;
   color: $white-text;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 18px;
+  @media screen and (min-width: 744px) {
+    padding-top: 40px;
+    text-align: start;
+    padding-bottom: 40px;
+  }
 }
 .location_title {
   font-size: 14px;
   line-height: 160%;
   margin-bottom: 20px;
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 15px;
+  }
 }
 .phone_link {
   display: inline-block;
+  text-decoration: none;
   color: $white-text;
   margin-bottom: 60px;
-  font-family: 'Cormorant Infant';
+  font-family: 'Cormorant Infant', sant-serif;
   font-style: italic;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 35px;
   line-height: 100%;
   transition: 0.3s;
   &:hover {
     color: $light-pink;
+  }
+  @media screen and (min-width: 744px) {
+    margin-bottom: 23px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 55px;
+    margin-bottom: 15px;
   }
 }
 .social {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+  @media screen and (min-width: 744px) {
+    justify-content: end;
+    margin-bottom: 0;
+  }
 
   &__item {
     &:not(:last-child) {
@@ -50,7 +82,9 @@
   &:hover {
     color: $light-pink;
   }
-
+  @media screen and (min-width: 744px) {
+    margin-bottom: 75px;
+  }
   &__icon {
     fill: currentColor;
     stroke: currentColor;
