@@ -2,23 +2,38 @@
 
 .acquaintance {
   background-color: $light;
-  padding: 70px 0 0;
+  padding: 70px 0 20px;
+  position: relative;
   @media (min-width: 744px) {
-    padding: 70px 0px 0;
+    padding: 70px 0px 13px;
   }
   @media (min-width: 1000px) {
-    padding: 66px 0px 0;
+    padding: 66px 0px 18px;
   }
   @media (min-width: 1600px) {
-    padding: 22px 0px 0;
+    padding: 22px 0px 11px;
   }
 
   &__box {
     @media (min-width: 744px) {
     }
     @media (min-width: 1000px) {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-left: -40px;
+      justify-content: flex-end;
     }
     @media (min-width: 1600px) {
+      margin-left: -55px;
+    }
+  }
+
+  &__discription {
+    @media (min-width: 1000px) {
+      margin: 0 0 auto;
+    }
+    @media (min-width: 1600px) {
+      margin: 68px 0 auto -40px;
     }
     .btn {
       display: block;
@@ -32,6 +47,10 @@
       @media (min-width: 1600px) {
       }
     }
+  }
+  .marquee {
+    position: absolute;
+    bottom: 0;
   }
 
   // .acquaintance__title
@@ -48,8 +67,10 @@
       margin: 0 0 60px 80px;
     }
     @media (min-width: 1000px) {
+      margin: 0 0 50px 0;
     }
     @media (min-width: 1600px) {
+      margin: 0 0 50px 0;
       font-size: 40px;
     }
     .accent {
@@ -64,6 +85,7 @@
         margin-left: 82px;
       }
       @media (min-width: 1000px) {
+        margin-left: 80px;
       }
       @media (min-width: 1600px) {
         font-size: 55px;
@@ -83,7 +105,13 @@
       margin-left: 80px;
       max-width: 540px;
     }
+    @media (min-width: 1000px) {
+      margin: 0 auto 30px 74px;
+      width: 380px;
+    }
     @media (min-width: 1600px) {
+      margin: 0 auto 30px 98px;
+      width: 472px;
       font-size: 16px;
     }
     .accent {
@@ -98,11 +126,13 @@
     @media (min-width: 744px) {
       width: 476px;
       margin-left: 102px;
-      margin-bottom: 13px;
     }
     @media (min-width: 1000px) {
+      width: 446px;
+      margin-left: 0;
     }
     @media (min-width: 1600px) {
+      width: 587px;
     }
   }
 }
