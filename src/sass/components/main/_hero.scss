@@ -26,22 +26,6 @@
     }
     @media (min-width: 1600px) {
     }
-    .btn {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 23px;
-      width: 250px;
-      @media (min-width: 744px) {
-        margin: 0;
-        margin-right: 20px;
-        display: inline-block;
-      }
-
-      @media (min-width: 1000px) {
-      }
-      @media (min-width: 1600px) {
-      }
-    }
   }
 
   // .hero__img
@@ -74,6 +58,31 @@
       margin-right: auto;
     }
     @media (min-width: 1600px) {
+    }
+    .arrow_link {
+      margin-left: 90px;
+      @media (min-width: 744px) {
+        margin: 0;
+      }
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 23px;
+      width: 250px;
+      @media (min-width: 744px) {
+        margin: 0;
+        margin-right: 20px;
+        display: inline-block;
+      }
+
+      @media (min-width: 1000px) {
+        margin-left: 90px;
+      }
+      @media (min-width: 1600px) {
+        margin-left: 98px;
+      }
     }
   }
 

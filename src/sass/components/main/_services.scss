@@ -1,0 +1,144 @@
+@import '../../variables';
+
+.services {
+  padding: 90px 0 113px;
+  @media (min-width: 744px) {
+    padding-bottom: 122px;
+  }
+  @media (min-width: 1000px) {
+    padding-bottom: 164px;
+  }
+
+  // .services__text
+
+  &__text {
+    font-size: 14px;
+    line-height: 160%;
+    margin-left: 60px;
+    margin-bottom: 60px;
+
+    @media (min-width: 744px) {
+      width: 363px;
+      margin-left: 160px;
+    }
+    @media (min-width: 1000px) {
+      width: auto;
+      margin-left: 160px;
+      margin-bottom: 80px;
+    }
+    @media (min-width: 1600px) {
+      margin-left: 197px;
+      font-size: 16px;
+    }
+
+    .accent {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+
+  // .services__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 744px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  // .services__item
+
+  &__item {
+    padding: 40px 33px 18px;
+    border: 1px solid $pink;
+    border-radius: 30px;
+    text-align: center;
+    min-height: 390px;
+    &:nth-child(n + 4) {
+      min-height: 350px;
+      @media (min-width: 744px) {
+        min-height: 390px;
+      }
+      @media (min-width: 1000px) {
+        min-height: 350px;
+      }
+    }
+    @media (min-width: 744px) {
+      max-width: calc(50% - 10px);
+    }
+    @media (min-width: 1000px) {
+      max-width: calc(33.333% - 13.3333px);
+      min-height: 410px;
+    }
+    @media (min-width: 1600px) {
+      min-height: 400px;
+    }
+  }
+
+  // .services__img
+
+  &__img {
+    border-radius: 50%;
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  // .services__title
+
+  &__title {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    color: $pink;
+  }
+
+  // .services__discription
+
+  &__discription {
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 30px;
+  @media (min-width: 744px) {
+    font-size: 28px;
+  }
+  @media (min-width: 1600px) {
+    font-size: 40px;
+  }
+
+  .accent {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+
+    display: block;
+    margin-left: 60px;
+    @media (min-width: 744px) {
+      font-size: 42px;
+      margin-left: 160px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1600px) {
+      font-size: 55px;
+      margin-left: 197px;
+    }
+  }
+}

@@ -114,6 +114,7 @@ button {
   padding-right: 13px;
   color: $black-text;
   transition: 0.3s;
+  backdrop-filter: blur(1px);
 
   &:hover {
     color: $pink;
