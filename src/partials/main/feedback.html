@@ -1,24 +1,44 @@
-<section>
+<section class="feedback">
   <div class="container">
-    <h2>
-      Зв’яжіться <br />
-      <span>зі мною</span>
-    </h2>
+    <div class="feed_wrap">
+      <div class="wrap">
+        <h2 class="feedback__title">
+          Зв’яжіться <br />
+          <span class="accent">зі мною</span>
+        </h2>
 
-    <p>
-      Бажаєте отримати розгорнуту консультацію? Я підберу комплекс процедур для
-      вирішення ваших потреб.
-    </p>
+        <p class="feedback__article">
+          Бажаєте отримати <span class="accent">розгорнуту консультацію</span>?
+          Я підберу комплекс процедур для вирішення ваших потреб.
+        </p>
 
-    <form>
-      <label for="">
-        <input type="text" />
-      </label>
-      <label for="">
-        <input type="tel" />
-      </label>
-      <button type="submit">Залишити заявку</button>
-    </form>
-    <img src="images/main/feedback@1x.jpg" alt="master" />
+        <form class="form">
+          <label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              autocomplete="off"
+              placeholder="Ім'я"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              class="form__input"
+              name="phone"
+              autocomplete="off"
+              placeholder="+38"
+            />
+          </label>
+          <button class="btn" type="submit">Залишити заявку</button>
+        </form>
+      </div>
+      <img
+        class="feedback__picture"
+        src="images/main/feedback@1x.jpg"
+        alt="master"
+      />
+    </div>
   </div>
 </section>
