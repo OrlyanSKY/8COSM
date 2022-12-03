@@ -1,0 +1,26 @@
+.footer_404page {
+  padding-bottom: 50px;
+  &__text {
+    font-family: 'Inter';
+    line-height: 160%;
+    text-align: center;
+    color: $gray;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-bottom: 26px;
+  }
+}
+
+.social {
+  &__link {
+    &--custom {
+      color: $pink;
+      &:hover {
+        color: $dark-pink;
+      }
+    }
+  }
+}
+.social--mod {
+  margin-bottom: 0px;
+}
