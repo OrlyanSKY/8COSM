@@ -1,9 +1,11 @@
 .body_404 {
   text-align: center;
+  padding-top: 200px;
+  flex-grow: 1;
 }
-.centered_wrap {
-  height: 83vh;
+.centered {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .page_title {
@@ -30,4 +32,16 @@
   &--mod {
     padding: 16px 52px 17px;
   }
+}
+.main_wrapp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 780px;
+}
+.page_body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
