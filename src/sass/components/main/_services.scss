@@ -58,6 +58,7 @@
     border-radius: 30px;
     text-align: center;
     min-height: 390px;
+    background-color: $white-text;
     &:nth-child(n + 4) {
       min-height: 350px;
       @media (min-width: 744px) {

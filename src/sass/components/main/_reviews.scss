@@ -223,7 +223,9 @@
   font-size: 22px;
   transition: 0.3s;
   &:hover {
-    background-color: $light-pink;
+    @media (min-width: 1000px) {
+      background-color: $light-pink;
+    }
   }
   &.left {
     left: -53px;

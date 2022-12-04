@@ -18,13 +18,17 @@
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/main/header.html"></include>
-    <include src="./partials/main/hero.html"></include>
-    <include src="./partials/main/services.html"></include>
+    <div class="bg_top">
+      <include src="./partials/main/hero.html"></include>
+      <include src="./partials/main/services.html"></include>
+    </div>
     <include src="./partials/main/acquaintance.html"></include>
-    <include src="./partials/main/brands.html"></include>
-    <include src="./partials/main/work.html"></include>
-    <include src="./partials/main/reviews.html"></include>
-    <include src="./partials/main/feedback.html"></include>
+    <div class="bg_bottom">
+      <include src="./partials/main/brands.html"></include>
+      <include src="./partials/main/work.html"></include>
+      <include src="./partials/main/reviews.html"></include>
+      <include src="./partials/main/feedback.html"></include>
+    </div>
     <include src="./partials/main/footer.html"></include>
   </body>
 </html>
