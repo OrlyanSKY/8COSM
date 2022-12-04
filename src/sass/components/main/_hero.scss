@@ -151,7 +151,7 @@
   }
 }
 
-.btn_list {
+.city_list {
   display: none;
   @media (min-width: 744px) {
     display: flex;
@@ -164,9 +164,9 @@
   }
   @media (min-width: 1600px) {
   }
-  // .btn_list__item
 }
-.city_btn {
+.city_name {
+  background-color: $white-text;
   min-width: 86px;
   padding: 2px 17px;
   border: 1px solid $pink;
@@ -175,8 +175,7 @@
   line-height: 160%;
   transition: 0.3s;
 
-  &.accent,
-  :hover {
+  &.accent {
     background-color: $light-pink;
     border-color: $light-pink;
     color: $white-text;
