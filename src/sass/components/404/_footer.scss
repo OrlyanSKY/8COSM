@@ -12,6 +12,12 @@
 }
 
 .social {
+  justify-content: center;
+  margin-bottom: 80px;
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
   &__link {
     &--custom {
       color: $pink;
