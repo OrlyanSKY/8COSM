@@ -35,11 +35,20 @@
           <button class="btn wide" type="submit">Залишити заявку</button>
         </form>
       </div>
-      <img
-        class="feedback__picture"
-        src="images/main/feedback@1x.jpg"
-        alt="master"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/main/feedback@1x.jpg 1x,
+            ./images/main/feedback@2x.jpg 2x,
+            ./images/main/feedback@3x.jpg 3x
+          "
+        />
+        <img
+          class="feedback__picture"
+          src="./images/main/feedback@1x.jpg"
+          alt="Яна Дубинська"
+        />
+      </picture>
     </div>
   </div>
 </section>
