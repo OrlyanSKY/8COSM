@@ -1,11 +1,20 @@
 <section class="hero">
   <div class="container">
     <div class="hero__box">
-      <img
-        class="hero__img"
-        src="./images/main/hero_img@1x.jpg"
-        alt="Яна Дубинська"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/main/hero_img@1x.jpg 1x,
+            ./images/main/hero_img@2x.jpg 2x,
+            ./images/main/hero_img@3x.jpg 3x
+          "
+        />
+        <img
+          class="hero__img"
+          src="./images/main/hero_img@1x.jpg"
+          alt="Яна Дубинська"
+        />
+      </picture>
       <div class="hero__discription">
         <ul class="city_list">
           <li class="city_list__item">
