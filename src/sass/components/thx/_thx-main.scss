@@ -1,5 +1,14 @@
 @import '../../common';
 
+body {
+  background-image: url(../../../images/404_and_thx_bg_mob.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  @media (min-width: 1000px) {
+    background-image: url(../../../images/404_and_thx_bg.svg);
+  }
+}
+
 .body_404 {
   text-align: center;
   display: flex;
@@ -62,9 +71,16 @@
 }
 
 .social {
+  justify-content: center;
+  margin-bottom: 80px;
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
   &__link {
     &--custom {
       color: $pink;
+      transition: 0.3s;
       &:hover {
         color: $dark-pink;
       }
