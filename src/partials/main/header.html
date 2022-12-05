@@ -12,12 +12,18 @@
     </a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Послуги</a></li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Результати</a>
+          <a href="#services" class="nav__link">Послуги</a>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link">Відгуки</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+        <li class="nav__item">
+          <a href="#work_res" class="nav__link">Результати</a>
+        </li>
+        <li class="nav__item">
+          <a href="#reviews" class="nav__link">Відгуки</a>
+        </li>
+        <li class="nav__item">
+          <a href="#footer" class="nav__link">Контакти</a>
+        </li>
       </ul>
     </nav>
     <button class="btn" type="button">Залишити заявку</button>
@@ -35,5 +41,47 @@
         <use href="./images/main/symbol-defs.svg#burger_icon_open"></use>
       </svg>
     </button>
+  </div>
+
+  <div class="mob_menu is-hidden">
+    <div class="mob_menu__box">
+      <a
+        href="./"
+        class="mob_menu__logo"
+        aria-label="8COSM Лікар-косметолог
+    Яна Дубинська"
+      >
+        <svg class="mob_menu__logo_icon">
+          <use href="./images/main/symbol-defs.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="mob_menu__nav">
+        <ul class="mob_menu__list">
+          <li class="mob_menu__item">
+            <a href="#services" class="mob_menu__link">Послуги</a>
+          </li>
+          <li class="mob_menu__item">
+            <a href="#work_res" class="mob_menu__link">Результати</a>
+          </li>
+          <li class="mob_menu__item">
+            <a href="#reviews" class="mob_menu__link">Відгуки</a>
+          </li>
+          <li class="mob_menu__item">
+            <a href="#footer" class="mob_menu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="mob_menu__phone_link" href="tel:+380662947310"
+        >+380 66 294 73 10</a
+      >
+      <button class="mob_menu_btn" type="button">Залишити заявку</button>
+    </div>
+    <button
+      class="close_menu_btn"
+      type="button"
+      aria-label="Закрити меню навігації"
+    ><svg class="close_menu_btn__icon">
+      <use href="./images/main/symbol-defs.svg#close_icon">
+    </svg></button>
   </div>
 </header>
