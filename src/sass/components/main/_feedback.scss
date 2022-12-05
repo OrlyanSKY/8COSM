@@ -41,6 +41,7 @@
     font-weight: 300;
     font-size: 28px;
     line-height: 100%;
+
     @media screen and (min-width: 744px) {
       margin-top: 10px;
       margin-bottom: 32px;
@@ -112,9 +113,25 @@
 }
 
 .form {
+  position: relative;
   width: 100%;
   margin-bottom: 70px;
   text-align: center;
+
+  &::before {
+    content: '';
+    background-image: url(../images/main/Country.png);
+    display: block;
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    left: 27px;
+    top: 88px;
+    z-index: 1;
+    @media screen and (min-width: 1000px) {
+      top: 82px;
+    }
+  }
   @media screen and (min-width: 744px) {
     max-width: 310px;
     margin: 0 auto;
@@ -128,6 +145,7 @@
     margin-left: 98px;
   }
   &__input {
+    color: $gray;
     padding: 11px 29px;
     margin-bottom: 20px;
     width: 100%;
@@ -136,6 +154,9 @@
     border-radius: 27px;
     &:focus {
       outline: none;
+    }
+    &::placeholder {
+      color: $gray;
     }
     @media screen and (min-width: 1000px) {
       margin-bottom: 14px;
@@ -146,5 +167,8 @@
     @media screen and (min-width: 1600px) {
       padding: 16px 92px 17px;
     }
+  }
+  #tel {
+    padding-left: 45px;
   }
 }
