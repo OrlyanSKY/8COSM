@@ -7,6 +7,7 @@ const gallerySwiper = new Swiper('.gallery_swiper', {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
+  loop: true,
 
   // breakpoints: {
   //   // when window width is >= 320px
@@ -26,10 +27,10 @@ const gallerySwiper = new Swiper('.gallery_swiper', {
   //   },
   // },
 
-  // pagination: {
-  //   el: 'gallery_swiper__pagination',
-  //   clickable: false,
-  // },
+  pagination: {
+    el: '.gallery_swiper__pagination',
+    clickable: false,
+  },
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',

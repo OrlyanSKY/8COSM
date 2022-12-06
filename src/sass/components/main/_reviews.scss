@@ -307,14 +307,15 @@
   &.swiper-pagination-disabled {
     display: none !important;
   }
-}
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -25%;
-  display: flex;
-  left: 0;
-  gap: 5px;
-  justify-content: center;
-  width: 85%;
+
+  &.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -25%;
+    display: flex;
+    left: 0;
+    gap: 5px;
+    justify-content: center;
+    width: 85%;
+  }
 }
 
 .swiper-pagination-bullet {
