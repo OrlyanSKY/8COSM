@@ -51,6 +51,18 @@
   .marquee {
     position: absolute;
     bottom: 0;
+    &__text {
+      margin-left: auto;
+      animation: scroll-revers 2s infinite linear;
+    }
+    @keyframes scroll-revers {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(100%, 0);
+      }
+    }
   }
 
   // .acquaintance__title
