@@ -11,7 +11,7 @@ var swiper = new Swiper('.mySwiper', {
     delay: 3000,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination',
     clickable: false,
   },
   navigation: {
