@@ -53,6 +53,7 @@
     }
     @media screen and (min-width: 1000px) {
       margin-bottom: 90px;
+      max-width: 365px;
       margin-left: 240px;
     }
     @media screen and (min-width: 1600px) {
@@ -177,6 +178,7 @@
     color: $pink;
     margin-bottom: 16px;
     @media screen and (min-width: 744px) {
+      max-width: 230px;
       margin-bottom: 30px;
     }
   }
