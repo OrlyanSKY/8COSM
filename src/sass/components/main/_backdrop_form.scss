@@ -1,0 +1,94 @@
+@import '../../variables';
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  &__close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $gray;
+    outline: none;
+    transition: color 0.3s;
+    @media (min-width: 1000px) {
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+  &__iconClose {
+    stroke: currentColor;
+  }
+}
+
+.form__box {
+  position: relative;
+}
+
+.form_popUp {
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0;
+
+  width: 320px;
+  text-align: center;
+  @media (min-width: 1000px) {
+    width: 500px;
+    padding: 50px 90px;
+  }
+}
+
+.form__title {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: $pink;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.form_popUp__input {
+  color: $gray;
+  padding: 11px 29px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid $light-pink;
+  border-radius: 27px;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $gray;
+  }
+  @media screen and (min-width: 1000px) {
+    margin-bottom: 14px;
+  }
+}
+
+.forn__tel {
+  position: relative;
+  &::after {
+    content: '';
+    background-image: url(../images/main/Country.png);
+    width: 15px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: 7px;
+  }
+  & #forn__tel {
+    padding-left: 47px;
+    margin-bottom: 25px;
+  }
+}
