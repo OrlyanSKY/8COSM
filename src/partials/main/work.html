@@ -94,36 +94,75 @@
       </li>
     </ul>
   </div>
-  <div class="pop_up is-hidden">
-    <div class="pop_up__body">
-      <div class="pop_up__content">
-        <button class="pop_up__btn" type="button">
-          <svg class="pop_up__iconClose" width="20" height="20">
-            <use href="./images/main/symbol-defs.svg#close_icon_gallery"></use>
-          </svg>
-        </button>
-        <div class="gallery_swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="images/main/work_img_1@2x.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/main/work_img_2@2x.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/main/work_img_3@2x.jpg" alt="" />
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="gallery_swiper__pagination"></div>
+</section>
 
-          <!-- If we need navigation buttons -->
-          <div class="button-prev"><</div>
-          <div class="button-next">></div>
+<div class="pop_up is-hidden">
+  <div class="pop_up__body">
+    <button
+      class="pop_up__btn"
+      type="button"
+      aria-label="кнопка закриття модального вікна"
+    >
+      <svg class="iconClose" width="20" height="20">
+        <use href="./images/main/symbol-defs.svg#close_icon_gallery"></use>
+      </svg>
+    </button>
+
+    <div class="pop_up__content">
+      <div class="swiper slider_gallery">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <img src="images/main/work_img_2@2x.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main/work_img_3@2x.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main/work_img_2@2x.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main/work_img_1@2x.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/main/work_img_1@2x.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+
+  <!-- <div class="gallery_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--modified">
+              <img src="images/main/work_img_1@2x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide swiper-slide--modified">
+              <img src="images/main/work_img_2@2x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide swiper-slide--modified">
+              <img src="images/main/work_img_3@2x.jpg" alt="" />
+            </div>
+          </div>
+        </div> -->
+  <!-- <button
+          class="button-prev"
+          type="button"
+          aria-label="кнопка гортання свайпера вліво"
+        >
+          <svg class="button-prev__icon" width="6" height="11">
+            <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
+          </svg>
+        </button>
+        <button
+          class="button-next"
+          type="button"
+          aria-label="кнопка гортання свайпера вправо"
+        >
+          <svg class="button-next__icon" width="6" height="11">
+            <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
+          </svg>
+        </button>
+        <div class="gallery_swiper__pagination"></div> -->
+</div>

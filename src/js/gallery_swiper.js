@@ -1,38 +1,43 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const gallery = document.querySelector('.gallery_swiper');
-
-const gallerySwiper = new Swiper('.gallery_swiper', {
-  modules: [Navigation, Pagination],
+const gallery = new Swiper('.slider_gallery', {
   slidesPerView: 1,
-  spaceBetween: 10,
-  centeredSlides: true,
+  spaceBetween: 30,
   loop: true,
-
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40,
-  //   },
-  // },
-
-  pagination: {
-    el: '.gallery_swiper__pagination',
-    clickable: false,
-  },
-  navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+  slideActiveClass: 'active',
+  breakpoints: {
+    // when window width is >= 1000px
+    1000: {
+      centeredSlides: true,
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
   },
 });
+
+// const gallerySwiper = new Swiper('.gallery_swiper', {
+//   modules: [Navigation, Pagination],
+//   slidesPerView: 1,
+//   spaceBetween: 50,
+//   centeredSlides: true,
+//   loop: true,
+
+//   breakpoints: {
+//     // when window width is >= 1000px
+//     1000: {
+//       slidesPerView: 2.5,
+//       spaceBetween: 20,
+//     },
+//   },
+
+//   pagination: {
+//     el: '.gallery_swiper__pagination',
+//     bulletClass: 'bullet',
+//     bulletActiveClass: 'active_bullet',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.button-next',
+//     prevEl: '.button-prev',
+//   },
+// });

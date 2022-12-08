@@ -70,6 +70,17 @@
     max-width: 220px;
     position: relative;
 
+    &:hover .arrow_link {
+      color: $pink;
+      &::before {
+        right: -43px;
+      }
+      &::after {
+        transform: scale(1.2);
+        right: -55px;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 60px;
     }
