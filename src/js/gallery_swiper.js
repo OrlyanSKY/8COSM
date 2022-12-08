@@ -4,13 +4,16 @@ const gallery = new Swiper('.slider_gallery', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  slideActiveClass: 'active',
+  slideActiveClass: 'work_slide__active',
+  slideClass: 'gallery-slide',
+  initialSlide: 2,
   breakpoints: {
     // when window width is >= 1000px
     1000: {
       centeredSlides: true,
-      slidesPerView: 1.5,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      loopedSlides: 5,
+      spaceBetween: 180,
     },
   },
 });
