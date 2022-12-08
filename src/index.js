@@ -6,3 +6,4 @@ import './js/imask';
 import './js/mob_menu';
 import './js/marquee';
 import './js/popUp';
+import './js/backdrop_form';

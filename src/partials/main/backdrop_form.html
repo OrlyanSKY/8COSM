@@ -1,0 +1,37 @@
+<div class="backdrop is-hidden">
+  <div class="form__box">
+    <form class="form_popUp">
+      <h3 class="form__title">Залиште ваші дані</h3>
+      <label>
+        <input
+          class="form_popUp__input"
+          type="number"
+          name="name"
+          autocomplete="off"
+          placeholder="Ім'я"
+        />
+      </label>
+      <label class="forn__tel">
+        <input
+          class="form_popUp__input"
+          type="text"
+          class="form_popUp__input"
+          id="forn__tel"
+          name="phone"
+          autocomplete="off"
+          placeholder="+38"
+        />
+      </label>
+      <button class="btn" type="submit">Надіслати</button>
+    </form>
+    <button
+      type="button"
+      class="backdrop__close_btn js-formPopUp"
+      aria-label="Закрити вікно форми"
+    >
+      <svg class="backdrop__iconClose" width="20" height="20">
+        <use href="./images/main/symbol-defs.svg#close_icon_gallery"></use>
+      </svg>
+    </button>
+  </div>
+</div>
