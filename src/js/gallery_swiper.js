@@ -9,8 +9,8 @@ const gallery = new Swiper('.slider_gallery', {
     // when window width is >= 1000px
     1000: {
       centeredSlides: true,
-      slidesPerView: 1.8,
-      spaceBetween: 50,
+      slidesPerView: 1.5,
+      spaceBetween: 20,
     },
   },
 });

@@ -46,16 +46,20 @@
 // }
 
 .slider_gallery .swiper-slide {
-  transition: 0.5s ease;
-  opacity: 0.4;
   max-height: 660px;
 }
-.active {
-  transition: 0.5s ease;
-  opacity: 1;
-  transform: scale(0.8);
+.swiper-slide img {
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0.4;
 }
-
+.active img {
+  max-width: 660px;
+  opacity: 1;
+}
+.swiper-gallery .swiper-wrapper {
+  padding: 80px 0;
+}
 // .card {
 //   outline: 3px solid $pink;
 //   max-width: 320px;
