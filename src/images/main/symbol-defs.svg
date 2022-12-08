@@ -28,5 +28,6 @@
 <line x1="1.41421" y1="1" x2="20" y2="19.5858"  stroke-width="2" stroke-linecap="round"/>
 <line x1="1" y1="19.5858" x2="19.5858" y2="1"  stroke-width="2" stroke-linecap="round"/>
 </symbol>
+<symbol id="slider_nav_btn" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"  fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.757.202a.5.5 0 0 1 .708.707L2.298 5.076l4.177 4.43a.5.5 0 0 1-.728.686L1.242 5.414l-.348-.349.01-.01-.01-.01.359-.338L5.757.202Z" clip-rule="evenodd"/></symbol>
 </defs>
 </svg>
