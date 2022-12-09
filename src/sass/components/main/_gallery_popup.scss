@@ -17,6 +17,7 @@
     top: 20;
     right: 20;
     outline: none;
+    z-index: 1;
     .iconClose {
       stroke: currentColor;
     }
@@ -32,13 +33,13 @@
   }
   &__content {
     height: 100%;
-    width: 320px;
+    max-width: 320px;
 
     @media screen and (min-width: 744px) {
-      width: 480px;
+      max-width: 500px;
     }
     @media screen and (min-width: 1000px) {
-      width: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -92,17 +93,29 @@
 }
 .button-prev {
   left: 40;
+  @media (min-width: 1000px) {
+    left: calc(50% - 396px);
+  }
 }
 .button-next {
   right: 40;
+  @media (min-width: 1000px) {
+    right: calc(50% - 396px);
+  }
 }
 
 .gallery_swiper__pagination {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 20%;
+  bottom: calc(50% - 200px);
   z-index: 21;
+  @media (min-width: 744px) {
+    bottom: calc(50% - 300px);
+  }
+  @media (min-width: 1000px) {
+    bottom: calc(50% - 375px);
+  }
   .bullet,
   .active_bullet {
     display: inline-block;
