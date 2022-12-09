@@ -20,6 +20,7 @@
   "dependencies": {
     "imask": "^6.4.3",
     "jarallax": "^2.0.4",
+    "just-validate": "^3.9.1",
     "modern-normalize": "^1.1.0",
     "swiper": "^8.4.5"
   },
