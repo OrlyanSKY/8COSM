@@ -20,11 +20,12 @@ validate
   ])
   .addField('.popUp_form__number', [
     {
-      rule: 'minLength',
-      value: 12,
-      errorMessage: `це обов'язкове поле для вводу і має складатися з 12 цифр`,
+      rule: 'customRegexp',
+      value: /[38][\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}/,
+      errorMessage: `Невірно введено номер)`,
     },
   ]);
+
 const mainPageValidation = new JustValidate('#form', {
   errorFieldCssClass: 'invalid',
   errorLabelCssClass: 'is-label-invalid',
@@ -36,9 +37,17 @@ const mainPageValidation = new JustValidate('#form', {
   },
 });
 
-mainPageValidation.addField('#name_input', [
-  {
-    rule: 'required',
-    errorMessage: `Це обов'язкове поле для вводу`,
-  },
-]);
+mainPageValidation
+  .addField('#name_input', [
+    {
+      rule: 'required',
+      errorMessage: `Це обов'язкове поле для вводу`,
+    },
+  ])
+  .addField('#tel', [
+    {
+      rule: 'customRegexp',
+      value: /[38][\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}/,
+      errorMessage: `Невірно введено номер)`,
+    },
+  ]);
