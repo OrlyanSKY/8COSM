@@ -9,7 +9,7 @@
     </p>
 
     <ul class="work__list">
-      <li class="work__item">
+      <li class="work__item" data-worklist="lips">
         <picture>
           <source
             srcset="
@@ -36,7 +36,7 @@
           <button class="arrow_link" type="button">Дивитись</button>
         </div>
       </li>
-      <li class="work__item">
+      <li class="work__item" data-worklist="wrinkles">
         <picture>
           <source
             srcset="
@@ -63,7 +63,7 @@
           <button class="arrow_link" type="button">Дивитись</button>
         </div>
       </li>
-      <li class="work__item">
+      <li class="work__item" data-worklist="face">
         <picture>
           <source
             srcset="
@@ -98,61 +98,248 @@
 
 <div class="pop_up is-hidden">
   <div class="pop_up__body">
-    <div class="pop_up__content">
-      <div class="swiper slider_gallery">
-        <div class="swiper-wrapper gallery-wrapper">
-          <!-- Slides -->
-
-          <div class="gallery-slide transition">
-            <img src="images/main/work_img_2@2x.jpg" alt="" />
+    <div
+      class="pop_up__content lips is-hidden visually-hidden"
+      data-wirklist="lips"
+    >
+      <div class="swiper slider_gallery_lips">
+        <div class="swiper-wrapper gallery-wrapper lips-wrapper">
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/01.jpg"
+              alt="Результати роботи"
+            />
           </div>
-          <div class="gallery-slide transition">
-            <img src="images/main/work_img_3@2x.jpg" alt="" />
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/02.jpg"
+              alt="Результати роботи"
+            />
           </div>
-          <div class="gallery-slide transition">
-            <img src="images/main/work_img_2@2x.jpg" alt="" />
+          <div class="gallery-slide lips-slide">
+            <video src="./images/work_lists/lips/03.mp4" controls></video>
           </div>
-          <div class="gallery-slide transition">
-            <img src="images/main/work_img_1@2x.jpg" alt="" />
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/04.jpg"
+              alt="Результати роботи"
+            />
           </div>
-          <div class="gallery-slide transition">
-            <img src="images/main/work_img_1@2x.jpg" alt="" />
+          <div class="gallery-slide lips-slide">
+            <video src="./images/work_lists/lips/05.mp4" controls></video>
+          </div>
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/06.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/07.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/08.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/09.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide lips-slide">
+            <img
+              src="./images/work_lists/lips/10.jpg"
+              alt="Результати роботи"
+            />
           </div>
         </div>
       </div>
+
+      <button
+        class="button-prev lips-prev"
+        type="button"
+        aria-label="кнопка гортання свайпера вліво"
+      >
+        <svg class="button-prev__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
+        </svg>
+      </button>
+
+      <button
+        class="button-next lips-next"
+        type="button"
+        aria-label="кнопка гортання свайпера вправо"
+      >
+        <svg class="button-next__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_btn_next"></use>
+        </svg>
+      </button>
+
+      <div class="gallery_swiper__pagination lips-pagination"></div>
     </div>
-    <button
-      class="pop_up__btn"
-      type="button"
-      aria-label="кнопка закриття модального вікна"
-    >
-      <svg class="iconClose" width="20" height="20">
-        <use href="./images/main/symbol-defs.svg#close_icon_gallery"></use>
-      </svg>
-    </button>
 
-    <!-- swiper navigation -->
-
-    <button
-      class="button-prev"
-      type="button"
-      aria-label="кнопка гортання свайпера вліво"
+    <div
+      class="pop_up__content wrinkles is-hidden visually-hidden"
+      data-wirklist="wrinkles"
     >
-      <svg class="button-prev__icon" width="6" height="11">
-        <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
-      </svg>
-    </button>
+      <div class="swiper slider_gallery_wrinkles">
+        <div class="swiper-wrapper gallery-wrapper wrinkles-wrapper">
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/01.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <img
+              src="./images/work_lists/wrinkles/02.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/03.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <img
+              src="./images/work_lists/wrinkles/04.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/05.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <img
+              src="./images/work_lists/wrinkles/06.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/07.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/08.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <video src="./images/work_lists/wrinkles/09.mp4" controls></video>
+          </div>
+          <div class="gallery-slide wrinkles-slide">
+            <img
+              src="./images/work_lists/wrinkles/10.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+        </div>
+      </div>
 
-    <button
-      class="button-next"
-      type="button"
-      aria-label="кнопка гортання свайпера вправо"
+      <button
+        class="button-prev wrinkles-prev"
+        type="button"
+        aria-label="кнопка гортання свайпера вліво"
+      >
+        <svg class="button-prev__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
+        </svg>
+      </button>
+
+      <button
+        class="button-next wrinkles-next"
+        type="button"
+        aria-label="кнопка гортання свайпера вправо"
+      >
+        <svg class="button-next__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_btn_next"></use>
+        </svg>
+      </button>
+
+      <div class="gallery_swiper__pagination wrinkles-pagination"></div>
+    </div>
+
+    <div
+      class="pop_up__content face is-hidden visually-hidden"
+      data-wirklist="face"
     >
-      <svg class="button-next__icon" width="6" height="11">
-        <use href="images/main/symbol-defs.svg#slider_btn_next"></use>
-      </svg>
-    </button>
-    <!-- pagination -->
-    <div class="gallery_swiper__pagination"></div>
+      <div class="swiper slider_gallery_face">
+        <div class="swiper-wrapper gallery-wrapper face-wrapper">
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/01.mp4" controls></video>
+          </div>
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/02.mp4" controls></video>
+          </div>
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/03.mp4" controls></video>
+          </div>
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/04.mp4" controls></video>
+          </div>
+          <div class="gallery-slide face-slide">
+            <img
+              src="./images/work_lists/face/05.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide face-slide">
+            <img
+              src="./images/work_lists/face/06.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/07.mp4" controls></video>
+          </div>
+          <div class="gallery-slide face-slide">
+            <img
+              src="./images/work_lists/face/08.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide face-slide">
+            <img
+              src="./images/work_lists/face/09.jpg"
+              alt="Результати роботи"
+            />
+          </div>
+          <div class="gallery-slide face-slide">
+            <video src="./images/work_lists/face/10.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="button-prev face-prev"
+        type="button"
+        aria-label="кнопка гортання свайпера вліво"
+      >
+        <svg class="button-prev__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_nav_btn"></use>
+        </svg>
+      </button>
+
+      <button
+        class="button-next face-next"
+        type="button"
+        aria-label="кнопка гортання свайпера вправо"
+      >
+        <svg class="button-next__icon" width="6" height="11">
+          <use href="images/main/symbol-defs.svg#slider_btn_next"></use>
+        </svg>
+      </button>
+
+      <div class="gallery_swiper__pagination face-pagination"></div>
+    </div>
   </div>
+  <button
+    class="pop_up__btn"
+    type="button"
+    data-worklist=""
+    aria-label="кнопка закриття модального вікна"
+  >
+    <svg class="iconClose" width="20" height="20">
+      <use href="./images/main/symbol-defs.svg#close_icon_gallery"></use>
+    </svg>
+  </button>
 </div>
