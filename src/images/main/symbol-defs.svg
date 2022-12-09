@@ -28,6 +28,9 @@
 <line x1="1.41421" y1="1" x2="20" y2="19.5858"  stroke-width="2" stroke-linecap="round"/>
 <line x1="1" y1="19.5858" x2="19.5858" y2="1"  stroke-width="2" stroke-linecap="round"/>
 </symbol>
-<symbol id="slider_nav_btn" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"  fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.757.202a.5.5 0 0 1 .708.707L2.298 5.076l4.177 4.43a.5.5 0 0 1-.728.686L1.242 5.414l-.348-.349.01-.01-.01-.01.359-.338L5.757.202Z" clip-rule="evenodd"/></symbol>
+<symbol id="slider_nav_btn" viewBox="0 0 7 11" xmlns="http://www.w3.org/2000/svg"  fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.757.202a.5.5 0 0 1 .708.707L2.298 5.076l4.177 4.43a.5.5 0 0 1-.728.686L1.242 5.414l-.348-.349.01-.01-.01-.01.359-.338L5.757.202Z" clip-rule="evenodd"/></symbol>
+<symbol id="slider_btn_next" viewBox="0 0 7 11" fill="none">
+<path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M1.24245 10.798C1.04719 10.9933 0.730609 10.9933 0.535347 10.798C0.340085 10.6027 0.340085 10.2862 0.535347 10.0909L4.70188 5.92438L0.525103 1.49437C0.335667 1.29345 0.344978 0.977004 0.545898 0.787569C0.746819 0.598134 1.06326 0.607445 1.2527 0.808365L5.75769 5.58648L6.10583 5.93463L6.09559 5.94487L6.10553 5.95541L5.74732 6.29314L1.24245 10.798Z" fill="currentColor"/>
+</symbol>
 </defs>
 </svg>
