@@ -33,12 +33,26 @@ const formPopUp = document.querySelector('.form_popUp');
 const handleSubmit = e => {
   e.preventDefault();
   const { phone, name } = e.currentTarget;
-
+  const nameField = e.target.elements.name;
+  const phoneField = e.target.elements.phone;
+  if (nameField.value === '') {
+    return;
+  }
+  if (
+    nameField.classList.contains('is-invalid') ||
+    phoneField.classList.contains('is-invalid')
+  ) {
+    return;
+  }
   const message = `<b><i>Ім'я:</i></b> ${name.value}%0A<b><i>Телефон:<i></b> <i>${phone.value}</i>`;
-  console.log(
-    `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`
-  );
-  // fetch(
+
+  fetchMessage(message);
+
+  // console.log(
+  //   `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`
+  // );
+
+  // const resp = fetch(
   //   `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`,
   //   {
   //     method: 'POST',
@@ -47,3 +61,16 @@ const handleSubmit = e => {
 };
 
 formPopUp.addEventListener('submit', handleSubmit);
+
+async function fetchMessage(message) {
+  try {
+    const response = await fetch(
+      `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`,
+      {
+        method: 'POST',
+      }
+    );
+  } catch (error) {
+    console.log(error.message);
+  }
+}
