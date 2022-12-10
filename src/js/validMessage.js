@@ -32,6 +32,7 @@ const mainPageValidation = new JustValidate('#form', {
   errorLabelCssClass: 'is-label-invalid',
   errorLabelStyle: {
     color: 'red',
+    fontSize: '14px',
     fontStyle: 'italic',
     marginTop: '-17px',
     textDecoration: 'underlined',
@@ -49,6 +50,6 @@ mainPageValidation
     {
       rule: 'customRegexp',
       value: /[38][\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}/,
-      errorMessage: `Невірно введено номер)`,
+      errorMessage: `Невірно введено номер`,
     },
   ]);
