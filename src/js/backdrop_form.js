@@ -29,6 +29,7 @@ const handleClick = () => {
 formPopUpOpenClose.forEach(btn => btn.addEventListener('click', handleClick));
 
 const formPopUp = document.querySelector('.form_popUp');
+const formFeedbackSection = document.querySelector('.form');
 
 const handleSubmit = e => {
   e.preventDefault();
@@ -44,24 +45,10 @@ const handleSubmit = e => {
   ) {
     return;
   }
-  const message = `<b><i>Ім'я:</i></b> ${name.value}%0A<b><i>Телефон:<i></b> <i>${phone.value}</i>`;
+  const message = `<b><i>Ім'я:</i></b> ${name.value}%0A<b><i>Телефон:</i></b> <i>${phone.value}</i>`;
 
   fetchMessage(message);
-
-  // console.log(
-  //   `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`
-  // );
-
-  // const resp = fetch(
-  //   `https://api.telegram.org/bot5840078401:AAE4S72HncySMPCNH2I-fUunf3-7RSts6d8/sendMessage?chat_id=-1001508491750&parse_mode=html&text=${message}`,
-  //   {
-  //     method: 'POST',
-  //   }
-  // );
 };
-
-formPopUp.addEventListener('submit', handleSubmit);
-
 async function fetchMessage(message) {
   try {
     const response = await fetch(
@@ -69,8 +56,11 @@ async function fetchMessage(message) {
       {
         method: 'POST',
       }
-    );
+    ).then((window.location.href = '/thx.html'));
   } catch (error) {
     console.log(error.message);
   }
 }
+
+formPopUp.addEventListener('submit', handleSubmit);
+formFeedbackSection.addEventListener('submit', handleSubmit);
