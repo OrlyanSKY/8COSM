@@ -44,7 +44,7 @@ const handleSubmit = e => {
   ) {
     return;
   }
-  const message = `<b><i>Ім'я:</i></b> ${name.value}%0A<b><i>Телефон:<i></b> <i>${phone.value}</i>`;
+  const message = `<b><i>Ім'я:</i></b> ${name.value}%0A<b><i>Телефон:</i></b> <i>${phone.value}</i>`;
 
   fetchMessage(message);
 
