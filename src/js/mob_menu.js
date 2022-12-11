@@ -3,8 +3,6 @@ const menuCloseBtn = document.querySelector('.close_menu_btn');
 const mobMenuEl = document.querySelector('.mob_menu');
 const mobNavListEl = document.querySelector('.mob_menu__nav');
 
-// console.log(document.body);
-
 menuOpenBtn.addEventListener('click', openCloseMenu);
 menuCloseBtn.addEventListener('click', openCloseMenu);
 mobNavListEl.addEventListener('click', e => {
@@ -16,3 +14,10 @@ function openCloseMenu() {
   mobMenuEl.classList.toggle('is-hidden');
   document.body.classList.toggle('scroll_lock');
 }
+
+const mobMenuHeight = () => {
+  const el = document.querySelector('.mob_menu');
+  el.style.height = window.innerHeight + 'px';
+};
+window.addEventListener('resize', appHeight);
+mobMenuHeight();
