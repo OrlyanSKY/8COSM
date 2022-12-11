@@ -19,5 +19,5 @@ const mobMenuHeight = () => {
   const el = document.querySelector('.mob_menu');
   el.style.height = window.innerHeight + 'px';
 };
-window.addEventListener('resize', appHeight);
+window.addEventListener('resize', mobMenuHeight);
 mobMenuHeight();
