@@ -1,10 +1,16 @@
 import IMask from 'imask';
 
 const phoneInput = document.getElementById('forn__tel');
+const nameInput = document.getElementById('form_name');
+
+const maskForNameField = IMask(nameInput, {
+  mask: /^[a-zA-Zа-яА-ЯЇїІіЄєЫыЁё\s\']+$/,
+});
 
 const maskOptions = {
-  mask: '{38}(000)000-00-00',
+  mask: '+00(000)000-00-00',
   lazy: false,
+  placeholderChar: 'x',
 };
 const mask = IMask(phoneInput, maskOptions);
 
@@ -36,9 +42,12 @@ const handleSubmit = e => {
   const { phone, name } = e.currentTarget;
   const nameField = e.target.elements.name;
   const phoneField = e.target.elements.phone;
-  if (nameField.value === '') {
+  const regExp = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+  if (nameField.value === '' || !regExp.test(phoneField.value)) {
     return;
   }
+
   if (
     nameField.classList.contains('is-invalid') ||
     phoneField.classList.contains('is-invalid')
