@@ -16,19 +16,19 @@ validate
   .addField('.form_popUp__input', [
     {
       rule: 'required',
-      errorMessage: `Це обов'язкове поле для вводу`,
+      errorMessage: `Введіть будь ласка своє ім'я`,
     },
   ])
   .addField('.popUp_form__number', [
     {
       rule: 'customRegexp',
-      value: /[38][\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}/,
+      value: /^(\s*)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
       errorMessage: `Невірно введено номер`,
     },
   ]);
 
 const mainPageValidation = new JustValidate('#form', {
-  errorFieldCssClass: 'invalid',
+  errorFieldCssClass: 'is-invalid',
   errorLabelCssClass: 'is-label-invalid',
   errorLabelStyle: {
     color: 'red',
@@ -43,13 +43,13 @@ mainPageValidation
   .addField('#name_input', [
     {
       rule: 'required',
-      errorMessage: `Це обов'язкове поле для вводу`,
+      errorMessage: `Введіть будь ласка своє ім'я`,
     },
   ])
   .addField('#tel', [
     {
       rule: 'customRegexp',
-      value: /[38][\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}/,
+      value: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
       errorMessage: `Невірно введено номер`,
     },
   ]);
