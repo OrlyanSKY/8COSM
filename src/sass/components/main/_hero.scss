@@ -1,13 +1,12 @@
 .hero {
-  margin-top: 80px;
-  padding: 30px 0 70px;
+  padding: 110px 0 70px;
 
   @media (min-width: 744px) {
-    padding: 60px 0 107px;
+    padding: 140px 0 107px;
   }
 
   @media (min-width: 1000px) {
-    padding: 70px 0 107px;
+    padding: 150px 0 107px;
     display: flex;
     align-items: center;
     height: calc(100vh - 80px);
@@ -15,7 +14,7 @@
   }
   @media (min-width: 1600px) {
     min-height: 700px;
-    padding: 70px 0 158px;
+    padding: 150px 0 158px;
   }
 
   // .hero__box
