@@ -2,14 +2,14 @@
   "name": "8cosm",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://kultprosvet87.github.io/8cosm/",
+  "homepage": "https://OrlyanSKY.github.io/8COSM/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /8cosm/"
+    "build": "parcel build src/*.html --public-url /8COSM/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https:https://github.com/KultProsvet87/8cosm"
+    "url": "git+https:https://github.com/OrlyanSKY/8COSM"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
