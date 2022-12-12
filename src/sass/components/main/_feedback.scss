@@ -15,7 +15,7 @@
 .wrap {
   max-width: 342px;
   @media screen and (min-width: 1000px) {
-    max-width: 390px;
+    max-width: 380px;
   }
   @media screen and (min-width: 1600px) {
     max-width: 450px;
@@ -118,20 +118,20 @@
   margin-bottom: 70px;
   text-align: center;
 
-  &::before {
-    content: '';
-    background-image: url(../images/main/Country.png);
-    display: block;
-    width: 15px;
-    height: 8px;
-    position: absolute;
-    left: 27px;
-    top: 88px;
-    z-index: 1;
-    @media screen and (min-width: 1000px) {
-      top: 82px;
-    }
-  }
+  // &::before {
+  //   content: '';
+  //   background-image: url(../images/main/Country.png);
+  //   display: block;
+  //   width: 15px;
+  //   height: 8px;
+  //   position: absolute;
+  //   left: 27px;
+  //   top: 88px;
+  //   z-index: 1;
+  //   @media screen and (min-width: 1000px) {
+  //     top: 82px;
+  //   }
+  // }
   @media screen and (min-width: 744px) {
     max-width: 310px;
     margin: 0 auto;
@@ -169,7 +169,13 @@
     }
   }
   #tel {
-    padding-left: 45px;
+    letter-spacing: 5.8px;
+    @media (min-width: 1000px) {
+      letter-spacing: 3.4px;
+    }
+    @media (min-width: 1600px) {
+      letter-spacing: 6.3px;
+    }
   }
   .invalid {
     border: 2px solid $light-pink;

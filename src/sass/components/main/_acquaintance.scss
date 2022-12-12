@@ -2,16 +2,16 @@
 
 .acquaintance {
   background-color: $light;
-  padding: 70px 0 20px;
+  padding: 90px 0 20px;
   position: relative;
   @media (min-width: 744px) {
-    padding: 70px 0px 13px;
+    padding: 90px 0px 13px;
   }
   @media (min-width: 1000px) {
-    padding: 66px 0px 18px;
+    padding: 90px 0px 18px;
   }
   @media (min-width: 1600px) {
-    padding: 22px 0px 11px;
+    padding: 65px 0px 11px;
   }
 
   &__box {

@@ -9,16 +9,10 @@
   &__box {
     display: flex;
     align-items: center;
-    max-width: 360px;
     padding: 0 20px;
     margin: 0 auto;
 
-    @media (min-width: 744px) {
-      max-width: 744px;
-    }
-
     @media (min-width: 1000px) {
-      max-width: 1000px;
       padding: 0 30px;
     }
     @media (min-width: 1600px) {
@@ -48,7 +42,7 @@
     @media (min-width: 744px) {
       display: inline;
     }
-    @media (min-width: 1600px) {
+    @media (min-width: 1280px) {
       margin-left: 0;
     }
   }
@@ -58,7 +52,7 @@
   margin-left: auto;
   margin-right: 150px;
   display: none;
-  @media (min-width: 1600px) {
+  @media (min-width: 1280px) {
     display: flex;
   }
   // .nav__list
@@ -116,7 +110,7 @@
   &:hover {
     stroke: $dark-pink;
   }
-  @media (min-width: 1600px) {
+  @media (min-width: 1280px) {
     display: none;
   }
 }
