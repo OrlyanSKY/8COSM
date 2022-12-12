@@ -65,7 +65,7 @@ async function fetchMessage(message) {
       {
         method: 'POST',
       }
-    ).then((window.location.href = '/thx.html'));
+    ).then((window.location.href = './thx.html'));
   } catch (error) {
     console.log(error.message);
   }

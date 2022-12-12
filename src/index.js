@@ -1,3 +1,4 @@
+import './js/change_opacity_onScroll';
 import './js/reviews_swiper';
 import './js/gallery_swiper';
 import './js/parallaxTop';

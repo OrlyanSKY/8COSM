@@ -69,7 +69,7 @@
   &__item {
     max-width: 220px;
     position: relative;
-
+    cursor: pointer;
     &:hover .arrow_link {
       color: $pink;
       &::before {

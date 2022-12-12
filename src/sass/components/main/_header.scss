@@ -3,8 +3,12 @@
   width: 100%;
   position: fixed;
   top: 0px;
-  background-color: #ffffff;
+  background-color: transparent;
   z-index: 10;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 
   &__box {
     display: flex;
@@ -47,6 +51,9 @@
     }
   }
 }
+.add_header_bgc {
+  background-color: $white-text;
+}
 
 .nav {
   margin-left: auto;
@@ -61,13 +68,6 @@
     display: flex;
     gap: 50px;
   }
-
-  // .nav__item
-
-  &__item {
-  }
-
-  // .nav__link
 
   &__link {
     padding: 29px 0;
