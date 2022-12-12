@@ -10,7 +10,7 @@ const maskForNameField = IMask(nameInput, {
 const maskOptions = {
   mask: '+00(000)000-00-00',
   lazy: false,
-  placeholderChar: 'x',
+  placeholderChar: 'X',
 };
 const mask = IMask(phoneInput, maskOptions);
 

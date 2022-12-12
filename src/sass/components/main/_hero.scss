@@ -8,8 +8,13 @@
 
   @media (min-width: 1000px) {
     padding: 70px 0 107px;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 80px);
+    min-height: 560px;
   }
   @media (min-width: 1600px) {
+    min-height: 700px;
     padding: 70px 0 158px;
   }
 
@@ -23,8 +28,10 @@
     }
 
     @media (min-width: 1000px) {
+      min-width: 1000px;
     }
     @media (min-width: 1600px) {
+      min-width: 1160px;
     }
   }
 

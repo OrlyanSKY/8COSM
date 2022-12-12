@@ -14,10 +14,3 @@ function openCloseMenu() {
   mobMenuEl.classList.toggle('is-hidden');
   document.body.classList.toggle('scroll_lock');
 }
-
-const mobMenuHeight = () => {
-  const el = document.querySelector('.mob_menu');
-  el.style.height = window.innerHeight + 'px';
-};
-window.addEventListener('resize', mobMenuHeight);
-mobMenuHeight();
