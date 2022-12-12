@@ -2,7 +2,7 @@ import IMask from 'imask';
 const nameInput = document.getElementById('name_input');
 const phoneInput = document.getElementById('tel');
 
-nameMask = IMask(nameInput, {
+const nameMask = IMask(nameInput, {
   mask: /^[a-zA-Zа-яА-ЯЇїІіЄєЫыЁё\s\']+$/,
 });
 
