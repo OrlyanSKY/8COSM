@@ -1,8 +1,4 @@
-window.onscroll = () => {
-  scrollNavbar();
-};
-
-scrollNavbar = () => {
+const scrollNavbar = () => {
   const navBar = document.getElementById('header');
 
   if (document.documentElement.scrollTop > 50) {
@@ -10,4 +6,8 @@ scrollNavbar = () => {
   } else {
     navBar.classList.remove('add_header_bgc');
   }
+};
+
+window.onscroll = () => {
+  scrollNavbar();
 };
